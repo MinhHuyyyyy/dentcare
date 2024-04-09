@@ -1,50 +1,69 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: black;
     outline: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-ul{
+
+ul {
     list-style: none;
 }
+
 header {
     height: 100px;
     width: 100vw;
-    border-bottom: 2px solid #dddd;
+    border-bottom: 2px solid #dddddd;
     text-align: center;
-}
-.admin-content {
-    padding-top: 50px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.admin-content {
+    display: flex;
+    padding-top: 20px;
+}
+
 .admin-content-left {
-    background-color: #dddddd;
+    background-color: #f0f0f0;
     width: 20%;
-    height: 100vh;
-    padding: 30px 0 0 12px;
+    height: calc(100vh - 100px);
+    padding: 20px;
 }
+
 .admin-content-left > ul > li > a {
     font-weight: bold;
+    color: #333;
 }
+
 .admin-content-left ul li {
-    margin: 6px 0;
+    margin: 10px 0;
 }
+
 .admin-content-left ul ul {
     margin-left: 20px;
 }
+
 .admin-content-right {
     width: 80%;
-    padding: 30px 00 12px;
+    padding: 20px;
 }
+
 .admin-content-right-category-add input {
     height: 30px;
     width: 200px;
-    padding-left: 12px;
+    padding: 8px;
     margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.admin-content-right-category-add input khung{
+    width: 200px;
 }
 .admin-content-right-category-add button {
     display: block;
@@ -52,15 +71,15 @@ header {
     height: 30px;
     width: 100px;
     cursor: pointer;
-    background-color: blue;
+    background-color: #28a745; /* Màu xanh lá */
     border: none;
     color: white;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
+
 .admin-content-right-category-add button:hover {
-    background-color: transparent;
-    border: 1px solid white;
-    color: blue;
+    background-color: #218838; /* Màu xanh lá đậm khi hover */
 }
 
 .admin-content-right-category-list table {
@@ -68,9 +87,14 @@ header {
     text-align: center;
     margin-top: 20px;
 }
-.admin-content-right-category-list tr th,td {
+
+.admin-content-right-category-list tr th,
+.admin-content-right-category-list tr td {
     border: 1px solid #dddddd;
+    padding: 10px;
 }
+
 table {
     border-collapse: collapse;
+    width: 100%;
 }

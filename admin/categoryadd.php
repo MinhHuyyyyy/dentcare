@@ -14,15 +14,15 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     }
 }
 ?>
-<div class="admin-content-right">
-    <div class="admin-content-right-category-add">
-        <h1>Thêm danh mục</h1>
-        <form action="" method="post">
-            <input required name="category_name" type="text" placeholder="Nhập tên danh mục">
-            <button type="submit">Thêm</button>
-        </form>
-    </div>
-</div>
-</section>
+        <div class="admin-content-right">
+            <div class="admin-content-right-category-add">
+                <h2>Thêm danh mục</h2>
+                <form action="" method="POST">
+                    <input type="text" name="category_name" placeholder="Nhập tên danh mục"> <!-- Thêm thuộc tính name="category_name" -->
+                    <button type="submit">Thêm</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
