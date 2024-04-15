@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Danh mục dịch vụ</title>
+</head>
+<body>
+    <header>
+        <h1>TOP</h1>
+    </header>
+    <section class="admin-content">
+        <div class="admin-content-left">
+            <ul>
+                <li><a href="#">Danh mục</a>
+                    <ul>
+                        <li><a href="">Thêm danh mục</a></li>
+                        <li><a href="">Danh sách danh mục</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Loại sản phẩm</a>
+                    <ul>
+                        <li><a href="">Thêm loại sản phẩm</a></li>
+                        <li><a href="">Danh sách sản phẩm</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sản phẩm</a>
+                    <ul>
+                        <li><a href="">Thêm sản phẩm</a></li>
+                        <li><a href="">Danh sách sản phẩm</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="admin-content-right">
+            <div class="admin-content-right-product-add">
+                <h1>Thêm sản phẩm</h1>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label for="">Nhập tên sản phẩm <span style="color: red;">*</span></label>
+                    <input type="text">
+                    <label for="">Chọn danh mục <span style="color: red;">*</span></label>
+                    <select name="" id="">
+                        <option value="#">Chọn</option>
+                    </select>
+                    <select name="" id="">
+                        <label for="">Chọn loại sản phẩm <span style="color: red;">*</span></label>
+                        <option value="#">Chọn</option>
+                    </select>
+                    <label for="">Giá sản phẩm<span style="color: red;">*</span></label>
+                    <input type="text">
+                    <label for="">Giá khuyến mãi<span style="color: red;">*</span></label>
+                    <input type="text">
+                    <label for="">Mô tả sản phẩm<span style="color: red;">*</span></label>
+                    <textarea name="" id="editor1" cols="30" rows="10"></textarea>
+                    <label for="">Ảnh sản phẩm<span style="color: red;">*</span></label>
+                    <input type="file">
+                    <label for="">Ảnh mô tả<span style="color: red;">*</span></label>
+                    <input multiple type="file">
+                    <button type="submit">Thêm</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    // Replace the <textarea id="editor1"> with a CKEditor 4
+    // instance, using default configuration.
+    CKEDITOR.replace( 'editor1' );
+</script>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Danh mục dịch vụ</title>
+</head>
+<body>
+    <header>
+        <h1>TOP</h1>
+    </header>
+    <section class="admin-content">
+        <div class="admin-content-left">
+            <ul>
+                <li><a href="#">Danh mục</a>
+                    <ul>
+                        <li><a href="categoryadd.php">Thêm danh mục</a></li>
+                        <li><a href="categorylist.php">Danh sách danh mục</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Loại sản phẩm</a>
+                    <ul>
+                        <li><a href="brandadd.php">Thêm loại sản phẩm</a></li>
+                        <li><a href="brandlist.php">Danh sách sản phẩm</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sản phẩm</a>
+                    <ul>
+                        <li><a href="#">Thêm sản phẩm</a></li>
+                        <li><a href="#">Danh sách sản phẩm</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="admin-content-right">
+            <div class="admin-content-right-product-add">
+                <h2>Thêm sản phẩm</h2>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label for="product_name">Nhập tên sản phẩm<span style="color: red;">*</span></label>
+                    <input type="text" id="product_name" name="product_name">
+                    <label for="category">Chọn danh mục<span style="color: red;">*</span></label>
+                    <select name="category" id="category">
+                        <option value="">--Chọn--</option>
+                    </select>
+                    <label for="product_type">Chọn loại sản phẩm<span style="color: red;">*</span></label>
+                    <select name="product_type" id="product_type">
+                        <option value="">--Chọn--</option>
+                    </select>
+                    <label for="product_price">Giá sản phẩm <span style="color: red;">*</span></label>
+                    <input type="text" id="product_price" name="product_price">
+                    <label for="discount">Nhập khuyến mãi<span style="color: red;">*</span></label>
+                    <input type="text" id="discount" name="discount">
+                    <label for="description">Mô tả sản phẩm<span style="color: red;">*</span></label>
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    <label for="product_image">Ảnh sản phẩm<span style="color: red;">*</span></label>
+                    <input type="file" id="product_image" name="product_image">
+                    <label for="image_description">Ảnh mô tả<span style="color: red;">*</span></label>
+                    <input multiple type="file" id="image_description" name="image_description">
+                    <button type="submit">Thêm</button>
+                </form>
+            </div>
+        </div>        
+    </section>
+</body>
+</html> -->

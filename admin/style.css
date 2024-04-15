@@ -98,3 +98,52 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
+.admin-content-right-product-add input,
+.admin-content-right-product-add select {
+    width: calc(100% - 24px);
+    height: 40px;
+    display: block;
+    margin: 6px 0 12px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.admin-content-right-product-add textarea {
+    display: block;
+    height: 150px;
+    width: calc(100% - 24px);
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: vertical; /* Cho phép điều chỉnh kích thước dọc */
+}
+
+.admin-content-right-product-add button {
+    display: inline-block;
+    margin-top: 10px;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    background-color: #28a745; /* Màu xanh lá */
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.admin-content-right-product-add button:hover {
+    background-color: #218838; /* Màu xanh lá đậm khi hover */
+}
+
+.admin-content-right-product-add h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
